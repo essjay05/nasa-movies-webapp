@@ -1,1 +1,11 @@
 @import '../../App.scss';
+
+.nasa-img-h2 span {
+  color: $yellow-color;
+}
+
+.nasa-img-wrapper > img {
+  max-width: 90vw;
+  object-fit: cover;
+  margin: 0 auto;
+}
