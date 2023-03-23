@@ -1,8 +1,10 @@
 import React from 'react'
 
-const MovieDetail = () => {
+const MovieDetail = ({ pageName }) => {
   return (
-    <div>MovieDetail</div>
+    <main>
+      <h1>Movie Detail Page: {pageName}</h1>
+    </main>
   )
 }
 

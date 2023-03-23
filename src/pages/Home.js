@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Home = () => {
+const Home = ({ pageName }) => {
   return (
-    <div>Home</div>
+    <main>
+      <h1>NASA Movies Web App: {pageName}</h1>
+    </main>
   )
 }
 
