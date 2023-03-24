@@ -9,9 +9,6 @@ const Home = ({ pageName }) => {
   const [ loading, setLoading ] = useState(true)
   const [ data, setData ] = useState(null)
 
-  console.log('process.env.REACT_APP_TMDB_KEY')
-  console.log(process.env.REACT_APP_TMDB_KEY)
-
   useEffect(() => {
     axios(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&query=NASA&include_adult=false`)
       .then(response => {
@@ -26,9 +23,6 @@ const Home = ({ pageName }) => {
         setLoading(false)
       })
   }, [])
-
-  console.log('Home data:')
-  console.log(data)
 
   return (
     <main>
