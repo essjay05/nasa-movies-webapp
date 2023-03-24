@@ -1,8 +1,7 @@
 @import '../../../App.scss';
 
 .card {
-  width: 30vw;
-  margin: .75rem;
+  margin: .5rem;
   color: $black-color;
 }
 
@@ -14,12 +13,33 @@
   overflow: hidden;
 }
 
+.card svg {
+  height: 8rem;
+  width: 8rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .nasa-movies-section .card img {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   object-fit: cover;
 }
 
 .nasa-movies-section .card {
   height: 50rem;
+}
+
+.nasa-movies-section .card-title {
+  color: $yellow-color;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nasa-movies-section ul {
+  list-style: none;
+  &li strong {
+    color: $yellow-color;
+  }
 }

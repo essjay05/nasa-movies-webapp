@@ -32,11 +32,12 @@ const Home = ({ pageName }) => {
       { !loading && data ?
         <section className='nasa-movies-section d-flex flex-wrap'>
           {data.map(movie => {
-            const { id, poster_path, title, overview, release_date, popularity } = {...movie}
+            const { id, poster_path, backdrop_path, title, overview, release_date, popularity } = {...movie}
             return (
               <Card 
                 key={id}
-                imgSrc={poster_path}
+                item={movie}
+                imgSrc={poster_path || backdrop_path}
                 title={title}
                 description={overview}
                 releaseDate={release_date}

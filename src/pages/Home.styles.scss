@@ -1,0 +1,18 @@
+@import '../App.scss';
+.nasa-movies-section .card {
+  height: 50rem;
+}
+
+.nasa-movies-section .card-title {
+  color: $yellow-color;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nasa-movies-section ul {
+  list-style: none;
+  &li strong {
+    color: $yellow-color;
+  }
+}
