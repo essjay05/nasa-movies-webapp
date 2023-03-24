@@ -30,7 +30,7 @@ const Home = ({ pageName }) => {
       <h1>NASA Movies Web App: {pageName}</h1>
       <NASAImg/>
       { !loading && data ?
-        <section className='d-flex flex-wrap'>
+        <section className='nasa-movies-section d-flex flex-wrap'>
           {data.map(movie => {
             const { id, poster_path, title, overview, release_date, popularity } = {...movie}
             return (
