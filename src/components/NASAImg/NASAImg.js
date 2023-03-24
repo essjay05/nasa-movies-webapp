@@ -31,7 +31,7 @@ const NASAImg = () => {
 
   return (
     <section className='nasa-img-section'>
-      { loading ? 
+      { loading || !data ? 
         <h2>Loading...</h2>
       :
         <>
