@@ -15,8 +15,6 @@ const NASAImg = () => {
     axios(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_APOD_KEY}`)
       .then(response => {
         setData(response.data)
-        console.log(`axios.then response.data`)
-        console.log(response.data)
       })
       .catch(err => {
         console.error(err)
