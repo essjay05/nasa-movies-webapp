@@ -45,6 +45,7 @@ const MoviesList = () => {
           return (
             <Card
               key={id}
+              url={`/movies/${id}`}
               className={'col-xl-3 col-sm-4 col-xs-12'}
               item={movie}
               imgSrc={poster_path || backdrop_path}

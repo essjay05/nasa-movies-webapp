@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
+
 import ImageIcon from '../SVGs/ImageIcon'
 
 import './Card.styles.scss'
 
-const Card = ({ props, item, id, imgSrc, title, description, releaseDate, popularity, className }) => {
+const Card = ({ props, item, id, url, imgSrc, title, description, releaseDate, popularity, className }) => {
 
   return (
     <div className={`card ${className}`}>
@@ -31,7 +33,13 @@ const Card = ({ props, item, id, imgSrc, title, description, releaseDate, popula
             <strong>Popularity: </strong>{popularity}
           </li>
         </ul>
-        <button className='btn btn-primary card-btn text-center mx-auto' href=''>More Movie Details</button>
+        <Link 
+          to={url}
+          state={{ ...item, ...props }}
+          aria-label={`To ${title} movie detail page`}
+          className='btn btn-primary card-btn'>
+          More Movie Details
+        </Link>
       </div>
     </div>
   )
