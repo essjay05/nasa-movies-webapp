@@ -1,14 +1,11 @@
-import {useState, useEffect} from 'react'
 import ImageIcon from '../SVGs/ImageIcon'
 
 import './Card.styles.scss'
 
-const Card = ({ props, item, id, imgSrc, title, description, releaseDate, popularity }) => {
+const Card = ({ props, item, id, imgSrc, title, description, releaseDate, popularity, className }) => {
 
-  console.log('Card item:')
-  console.log(item)
   return (
-    <div className='card col-xl-3 col-sm-4 col-xs-12'>
+    <div className={`card ${className}`}>
       <div className='card-body'>
         { imgSrc !== null ?
           <img
