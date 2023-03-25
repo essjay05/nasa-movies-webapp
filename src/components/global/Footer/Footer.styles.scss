@@ -1,0 +1,8 @@
+@import '../../../App.scss';
+
+a {
+  color: $white-color;
+  &:hover, &:focus {
+    color: $yellow-color;
+  }
+}
