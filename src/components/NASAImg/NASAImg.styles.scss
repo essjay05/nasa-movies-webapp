@@ -1,5 +1,12 @@
 @import '../../App.scss';
 
+.nasa-img-section figure,
+.nasa-img-section figure img {
+  height: 50vh;
+  width: 95vw;
+  object-fit: contain;
+}
+
 .nasa-img-h2 span {
   color: $yellow-color;
 }
