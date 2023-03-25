@@ -1,4 +1,9 @@
 @import '../../../App.scss';
-.navbar-nav li a {
-  color: $yellow-color;
+.navbar a {
+  &:hover {
+    color: $yellow-color;
+    & svg {
+      animation: bounce 1s ease 3;
+    }
+  }
 }
